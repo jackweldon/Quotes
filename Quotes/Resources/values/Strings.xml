@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ApplicationName">Quotes</string>
+  <string name="Love">Love</string>
+  <string name="Life">Life</string>
+  <string name="Funny">Funny</string>
+  <string name="Happy">Happy</string>
+
+</resources>
