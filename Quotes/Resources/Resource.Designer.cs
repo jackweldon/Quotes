@@ -62,6 +62,15 @@ namespace Quotes
 		public partial class Attribute
 		{
 			
+			// aapt resource value: 0x7f010000
+			public const int adSize = 2130771968;
+			
+			// aapt resource value: 0x7f010001
+			public const int adSizes = 2130771969;
+			
+			// aapt resource value: 0x7f010002
+			public const int adUnitId = 2130771970;
+			
 			static Attribute()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -75,23 +84,23 @@ namespace Quotes
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f050002
-			public const int funny_color = 2131034114;
+			// aapt resource value: 0x7f080002
+			public const int funny_color = 2131230722;
 			
-			// aapt resource value: 0x7f050003
-			public const int happy_color = 2131034115;
+			// aapt resource value: 0x7f080003
+			public const int happy_color = 2131230723;
 			
-			// aapt resource value: 0x7f050001
-			public const int life_color = 2131034113;
+			// aapt resource value: 0x7f080001
+			public const int life_color = 2131230721;
 			
-			// aapt resource value: 0x7f050000
-			public const int love_color = 2131034112;
+			// aapt resource value: 0x7f080000
+			public const int love_color = 2131230720;
 			
-			// aapt resource value: 0x7f050005
-			public const int transparent = 2131034117;
+			// aapt resource value: 0x7f080005
+			public const int transparent = 2131230725;
 			
-			// aapt resource value: 0x7f050004
-			public const int white = 2131034116;
+			// aapt resource value: 0x7f080004
+			public const int white = 2131230724;
 			
 			static Color()
 			{
@@ -122,29 +131,32 @@ namespace Quotes
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080002
-			public const int author = 2131230722;
+			// aapt resource value: 0x7f090007
+			public const int adView = 2131296263;
 			
-			// aapt resource value: 0x7f080005
-			public const int btn_Funny = 2131230725;
+			// aapt resource value: 0x7f090002
+			public const int author = 2131296258;
 			
-			// aapt resource value: 0x7f080006
-			public const int btn_Happy = 2131230726;
+			// aapt resource value: 0x7f090005
+			public const int btn_Funny = 2131296261;
 			
-			// aapt resource value: 0x7f080004
-			public const int btn_life = 2131230724;
+			// aapt resource value: 0x7f090006
+			public const int btn_Happy = 2131296262;
 			
-			// aapt resource value: 0x7f080003
-			public const int btn_love = 2131230723;
+			// aapt resource value: 0x7f090004
+			public const int btn_life = 2131296260;
 			
-			// aapt resource value: 0x7f080000
-			public const int card_back = 2131230720;
+			// aapt resource value: 0x7f090003
+			public const int btn_love = 2131296259;
 			
-			// aapt resource value: 0x7f080007
-			public const int container = 2131230727;
+			// aapt resource value: 0x7f090000
+			public const int card_back = 2131296256;
 			
-			// aapt resource value: 0x7f080001
-			public const int quote = 2131230721;
+			// aapt resource value: 0x7f090008
+			public const int container = 2131296264;
+			
+			// aapt resource value: 0x7f090001
+			public const int quote = 2131296257;
 			
 			static Id()
 			{
@@ -159,11 +171,14 @@ namespace Quotes
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int card_flip_time_full = 2131099648;
-			
 			// aapt resource value: 0x7f060001
-			public const int card_flip_time_half = 2131099649;
+			public const int card_flip_time_full = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public const int card_flip_time_half = 2131099650;
+			
+			// aapt resource value: 0x7f060000
+			public const int google_play_services_version = 2131099648;
 			
 			static Integer()
 			{
@@ -200,20 +215,26 @@ namespace Quotes
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f070000
-			public const int ApplicationName = 2131165184;
-			
-			// aapt resource value: 0x7f070003
-			public const int Funny = 2131165187;
+			// aapt resource value: 0x7f070001
+			public const int ApplicationName = 2131165185;
 			
 			// aapt resource value: 0x7f070004
-			public const int Happy = 2131165188;
+			public const int Funny = 2131165188;
+			
+			// aapt resource value: 0x7f070005
+			public const int Happy = 2131165189;
+			
+			// aapt resource value: 0x7f070003
+			public const int Life = 2131165187;
 			
 			// aapt resource value: 0x7f070002
-			public const int Life = 2131165186;
+			public const int Love = 2131165186;
 			
-			// aapt resource value: 0x7f070001
-			public const int Love = 2131165185;
+			// aapt resource value: 0x7f070006
+			public const int banner_ad_unit_id = 2131165190;
+			
+			// aapt resource value: 0x7f070000
+			public const int common_google_play_services_unknown_issue = 2131165184;
 			
 			static String()
 			{
@@ -221,6 +242,49 @@ namespace Quotes
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int Theme_IAPTheme = 2131034112;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
+			{
+			}
+		}
+		
+		public partial class Styleable
+		{
+			
+			public static int[] AdsAttrs = new int[] {
+					2130771968,
+					2130771969,
+					2130771970};
+			
+			// aapt resource value: 0
+			public const int AdsAttrs_adSize = 0;
+			
+			// aapt resource value: 1
+			public const int AdsAttrs_adSizes = 1;
+			
+			// aapt resource value: 2
+			public const int AdsAttrs_adUnitId = 2;
+			
+			static Styleable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Styleable()
 			{
 			}
 		}

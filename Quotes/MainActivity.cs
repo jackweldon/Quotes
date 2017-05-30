@@ -6,6 +6,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
+using Android.Gms.Ads;
 using Android.Widget;
 using Android.OS;
 using Android.Runtime;
@@ -17,12 +18,15 @@ using Quotes.Core.Services;
 namespace Quotes
 {
 
-    [Activity(Label = "Quotes", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Quote Cube", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         private bool mShowingBack;
         public GestureDetector mGestureDetector;
         public List<QuoteModel> _listOfQuotes;
+
+
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -42,6 +46,14 @@ namespace Quotes
 
             var lifeButton = (Button)FindViewById<Button>(Resource.Id.btn_life);
             lifeButton.Click += QuoteButtonOnClick;
+
+
+            var id = "ca-app-pub-1925531025157688~3263264655";
+            MobileAds.Initialize(ApplicationContext, id);
+
+            var adView = FindViewById<AdView>(Resource.Id.adView);
+            var adRequest = new AdRequest.Builder().Build();
+            adView.LoadAd(adRequest);
         }
 
         private void QuoteButtonOnClick(object sender, EventArgs eventArgs)
