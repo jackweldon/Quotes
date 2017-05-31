@@ -24,7 +24,7 @@ namespace Quotes
         private bool mShowingBack;
         public GestureDetector mGestureDetector;
         public List<QuoteModel> _listOfQuotes;
-
+        public QuoteModel lastQuote;
 
 
         protected override void OnCreate(Bundle bundle)
@@ -46,7 +46,7 @@ namespace Quotes
 
             var lifeButton = (Button)FindViewById<Button>(Resource.Id.btn_life);
             lifeButton.Click += QuoteButtonOnClick;
-
+            
 
             var id = "ca-app-pub-1925531025157688~3263264655";
             MobileAds.Initialize(ApplicationContext, id);
@@ -95,7 +95,8 @@ namespace Quotes
                 _listOfQuotes.AddRange(QuotesApi.FetchQuotesAsync(url).Result);
 
             }
-            var first = _listOfQuotes.OrderByDescending(m => Guid.NewGuid()).FirstOrDefault(m => m.QuoteType == type);
+            var first = lastQuote == null ? _listOfQuotes.OrderByDescending(m => Guid.NewGuid()).FirstOrDefault(m => m.QuoteType == type) : _listOfQuotes.OrderByDescending(m => Guid.NewGuid()).FirstOrDefault(m => m.QuoteType == type && m.Id != lastQuote.Id);
+            lastQuote = first;
             return first;
 
         }
